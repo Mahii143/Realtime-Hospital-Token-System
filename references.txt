@@ -1,0 +1,9 @@
+Websocket References:
+https://blog.logrocket.com/websocket-tutorial-real-time-node-react/#websocket
+
+Query used for creating a generated token column
+
+ALTER TABLE patient
+ADD COLUMN token TEXT GENERATED ALWAYS AS ('T -' || pid::TEXT) STORED;
+
+Table styles reference: https://colorlib.com/etc/tb/Table_Responsive_v2/index.html

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.25em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main > div {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width:100%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background-color: #c4d3f6;
+}
+
+.App {
+  text-align: center;
+}
+
+.title {
+  margin: 1rem;
+  text-align: center;
+}
+
+.table,
+.row {
+  display: flex;
+  align-self: flex-start;
+}
+
+.table {
+  margin: 0rem 1rem;
+  justify-content: center;
+  flex-direction: column;
+  width: 60rem;
+  height: 25rem;
+}
+
+.row {
+  text-align: center;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 3rem;
+}
+
+.data {
+  background-color: #fff;
+  border-bottom: 1px solid #f2f2f2;
+}
+.curr {
+  background-color: rgb(251, 255, 40);
+  /* font-style: italic; */
+  font-style: oblique;
+}
+.row>div {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.table-heading {
+  background-color: #6c7ae0;
+  height: 13%;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  font-weight: 400;
+}
+
+.table-body {
+  height: 87%;
+  overflow: auto;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  font-weight: 300;
+}
+
+.table-body::-webkit-scrollbar {
+  width: 1rem;
+}
+.table-body::-webkit-scrollbar-thumb {
+  background-color: #616ed3;
+}
+
+button {
+  all: unset;
+  font-size: 15px;
+  background-color: #6c7ae0;
+  color: white;
+  padding: 0.65rem 1rem;
+  margin: 0.75rem;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 5px 0px black;
+  background-color: #6c79e0a9;
+}
+
+input {
+  all: unset;
+  height: 1.75rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0.5rem;
+  background-color: white;
+  border-radius: 7px;
+}
+.token-client {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 10rem;
+  width: 20rem;
+  background-color: white;
+}
+.token-number {
+  font-size: 3rem;
+  text-align: center;
+}
