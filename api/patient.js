@@ -9,7 +9,6 @@ const pool = new Pool({
 
 const getPatient = () => {
     return new Promise(function(reslove,reject) {
-        const qry = 'SELECT * FROM public."patients" ORDER BY pid ASC RETURN *';
         pool.query('SELECT * FROM public."patients" ORDER BY pid ASC', (error,results) => {
             if(error) {
                 reject(error)
